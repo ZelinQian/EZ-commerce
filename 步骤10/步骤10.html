@@ -1,0 +1,763 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <title>步骤10</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <link href="resources/css/axure_rp_page.css" type="text/css" rel="stylesheet"/>
+    <link href="data/styles.css" type="text/css" rel="stylesheet"/>
+    <link href="files/步骤10/styles.css" type="text/css" rel="stylesheet"/>
+    <script src="resources/scripts/jquery-3.2.1.min.js"></script>
+    <script src="resources/scripts/axure/axQuery.js"></script>
+    <script src="resources/scripts/axure/globals.js"></script>
+    <script src="resources/scripts/axutils.js"></script>
+    <script src="resources/scripts/axure/annotation.js"></script>
+    <script src="resources/scripts/axure/axQuery.std.js"></script>
+    <script src="resources/scripts/axure/doc.js"></script>
+    <script src="resources/scripts/messagecenter.js"></script>
+    <script src="resources/scripts/axure/events.js"></script>
+    <script src="resources/scripts/axure/recording.js"></script>
+    <script src="resources/scripts/axure/action.js"></script>
+    <script src="resources/scripts/axure/expr.js"></script>
+    <script src="resources/scripts/axure/geometry.js"></script>
+    <script src="resources/scripts/axure/flyout.js"></script>
+    <script src="resources/scripts/axure/model.js"></script>
+    <script src="resources/scripts/axure/repeater.js"></script>
+    <script src="resources/scripts/axure/sto.js"></script>
+    <script src="resources/scripts/axure/utils.temp.js"></script>
+    <script src="resources/scripts/axure/variables.js"></script>
+    <script src="resources/scripts/axure/drag.js"></script>
+    <script src="resources/scripts/axure/move.js"></script>
+    <script src="resources/scripts/axure/visibility.js"></script>
+    <script src="resources/scripts/axure/style.js"></script>
+    <script src="resources/scripts/axure/adaptive.js"></script>
+    <script src="resources/scripts/axure/tree.js"></script>
+    <script src="resources/scripts/axure/init.temp.js"></script>
+    <script src="resources/scripts/axure/legacy.js"></script>
+    <script src="resources/scripts/axure/viewer.js"></script>
+    <script src="resources/scripts/axure/math.js"></script>
+    <script src="resources/scripts/axure/jquery.nicescroll.min.js"></script>
+    <script src="data/document.js"></script>
+    <script src="files/步骤10/data.js"></script>
+    <script type="text/javascript">
+      $axure.utils.getTransparentGifPath = function() { return 'resources/images/transparent.gif'; };
+      $axure.utils.getOtherPath = function() { return 'resources/Other.html'; };
+      $axure.utils.getReloadPath = function() { return 'resources/reload.html'; };
+    </script>
+
+    <style type="text/css">
+      .textareastyle{
+          border:1px solid #0376FD;
+          border-radius:5pt;
+          width:400px;
+          height:30px;
+          font-size:10pt;
+          margin-bottom: 2vh;
+          /* width:100%; */
+          color: #656a70;
+          overflow-x:hidden;
+          /* text-indent:20px */
+      }
+      #aptb1 {
+        border-width:0px;
+        position:absolute;
+        left:778px;
+        top:343px;
+        width:35px;
+        height:24px;
+        display:flex;
+        font-family:'Arial Negreta', 'Arial Normal', 'Arial';
+        font-weight:700;
+        font-style:normal;
+        font-size:12px;
+      }
+    </style>
+    
+    <script type="text/javascript">
+      function addFile(trID){
+          //先要创建一个tr对象
+          var trNode = document.createElement("tr");
+              //创建td对象
+          var tdNode1 =  document.createElement("td");
+          var tdNode2 =  document.createElement("td");
+          //
+          tdNode1.innerHTML ="<input type='file'/>";
+          tdNode2.innerHTML = "<a href='#' onclick='delFile(this)' >删除附件</a>";
+          //把td的节点添加到tr节点上
+          trNode.appendChild(tdNode1);
+          trNode.appendChild(tdNode2);
+          
+          var tbodyNode = document.getElementsByTagName("tbody")[0];
+          var lastRow = document.getElementById(trID);
+          
+          tbodyNode.insertBefore(trNode,lastRow);
+      }
+      
+      
+      //删除附件
+      function delFile(aNode){
+          var trNode = aNode.parentNode.parentNode;
+          var tbodyNode = document.getElementsByTagName("tbody")[0];
+          tbodyNode.removeChild(trNode);
+      }
+
+      function fileSelect(fileToUpload_ID) {
+        document.getElementById(fileToUpload_ID).click();
+      }  
+
+      function changetext(text_ID, fileToUpload_ID) {
+        var file;
+        var temptxt="\t(";
+        if (document.getElementById(fileToUpload_ID).files.length==0){
+          return;
+        }
+        for(var i=0; i<document.getElementById(fileToUpload_ID).files.length; i++){
+          file = document.getElementById(fileToUpload_ID).files[i];
+          temptxt += file.name+";";
+        }
+        temptxt+=")"
+        document.getElementById(text_ID).innerText=temptxt;
+      }
+    </script>
+
+  </head>
+  <body>
+    <div id="base" class="">
+
+      <!-- Unnamed (组合) -->
+      <div id="u0" class="ax_default" data-left="0" data-top="77" data-width="1440" data-height="955">
+
+        <!-- Unnamed (矩形) -->
+        <div id="u1" class="ax_default shape">
+          <div id="u1_div" class=""></div>
+          <div id="u1_text" class="text ">
+            <p><span>`</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u2" class="ax_default box_1">
+          <div id="u2_div" class=""></div>
+          <div id="u2_text" class="text " style="display:none; visibility: hidden">
+            <p></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Unnamed (组合) -->
+      <div id="u3" class="ax_default" data-left="0" data-top="77" data-width="1440" data-height="713">
+
+        <!-- Unnamed (组合) -->
+        <div id="u4" class="ax_default" data-left="0" data-top="177" data-width="324" data-height="613">
+
+          <!-- Unnamed (组合) -->
+          <div id="u5" class="ax_default" data-left="0" data-top="210" data-width="256" data-height="580">
+
+            <!-- Unnamed (组合) -->
+            <div id="u6" class="ax_default" data-left="0" data-top="210" data-width="256" data-height="61">
+
+              <!-- Unnamed (矩形) -->
+              <div id="u7" class="ax_default box_2">
+                <div id="u7_div" class=""></div>
+                <div id="u7_text" class="text ">
+                  <p><span>用户服务评价中心</span></p>
+                </div>
+              </div>
+
+              <!-- Unnamed (图像) -->
+              <div id="u8" class="ax_default image">
+                <img id="u8_img" class="img " src="images/步骤10/u8.png"/>
+                <div id="u8_text" class="text " style="display:none; visibility: hidden">
+                  <p></p>
+                </div>
+              </div>
+
+              <!-- Unnamed (图像) -->
+              <div id="u9" class="ax_default image">
+                <img id="u9_img" class="img " src="images/步骤10/u9.png"/>
+                <div id="u9_text" class="text " style="display:none; visibility: hidden">
+                  <p></p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Unnamed (矩形) -->
+            <div id="u10" class="ax_default box_2">
+              <div id="u10_div" class=""></div>
+              <div id="u10_text" class="text ">
+                <p><span>正进行合同</span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (组合) -->
+            <div id="u11" class="ax_default" data-left="0" data-top="430" data-width="256" data-height="52">
+
+              <!-- Unnamed (矩形) -->
+              <div id="u12" class="ax_default box_2">
+                <div id="u12_div" class=""></div>
+                <div id="u12_text" class="text ">
+                  <p><span>平台指南</span></p>
+                </div>
+              </div>
+
+              <!-- Unnamed (图像) -->
+              <div id="u13" class="ax_default image">
+                <img id="u13_img" class="img " src="images/步骤10/u9.png"/>
+                <div id="u13_text" class="text " style="display:none; visibility: hidden">
+                  <p></p>
+                </div>
+              </div>
+
+              <!-- Unnamed (图像) -->
+              <div id="u14" class="ax_default image">
+                <img id="u14_img" class="img " src="images/步骤10/u14.png"/>
+                <div id="u14_text" class="text " style="display:none; visibility: hidden">
+                  <p></p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Unnamed (矩形) -->
+            <div id="u15" class="ax_default box_2">
+              <div id="u15_div" class=""></div>
+              <div id="u15_text" class="text ">
+                <p><span>反馈情况</span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (矩形) -->
+            <div id="u16" class="ax_default box_2">
+              <div id="u16_div" class=""></div>
+              <div id="u16_text" class="text ">
+                <p><span>历史合同服务情况</span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (组合) -->
+            <div id="u17" class="ax_default" data-left="0" data-top="562" data-width="256" data-height="54">
+
+              <!-- Unnamed (矩形) -->
+              <div id="u18" class="ax_default box_2">
+                <div id="u18_div" class=""></div>
+                <div id="u18_text" class="text ">
+                  <p><span>常用信息</span></p>
+                </div>
+              </div>
+
+              <!-- Unnamed (图像) -->
+              <div id="u19" class="ax_default image">
+                <img id="u19_img" class="img " src="images/步骤10/u9.png"/>
+                <div id="u19_text" class="text " style="display:none; visibility: hidden">
+                  <p></p>
+                </div>
+              </div>
+
+              <!-- Unnamed (图像) -->
+              <div id="u20" class="ax_default image">
+                <img id="u20_img" class="img " src="images/步骤10/u20.png"/>
+                <div id="u20_text" class="text " style="display:none; visibility: hidden">
+                  <p></p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Unnamed (组合) -->
+            <div id="u21" class="ax_default" data-left="0" data-top="736" data-width="256" data-height="54">
+
+              <!-- Unnamed (矩形) -->
+              <div id="u22" class="ax_default box_2">
+                <div id="u22_div" class=""></div>
+                <div id="u22_text" class="text ">
+                  <p><span>安全相关</span></p>
+                </div>
+              </div>
+
+              <!-- Unnamed (图像) -->
+              <div id="u23" class="ax_default image">
+                <img id="u23_img" class="img " src="images/步骤10/u23.png"/>
+                <div id="u23_text" class="text " style="display:none; visibility: hidden">
+                  <p></p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Unnamed (矩形) -->
+            <div id="u24" class="ax_default box_2">
+              <div id="u24_div" class=""></div>
+              <div id="u24_text" class="text ">
+                <p><span>服务数据统计</span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (矩形) -->
+            <div id="u25" class="ax_default box_2">
+              <div id="u25_div" class=""></div>
+              <div id="u25_text" class="text ">
+                <p><span>平台简介</span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (矩形) -->
+            <div id="u26" class="ax_default box_2">
+              <div id="u26_div" class=""></div>
+              <div id="u26_text" class="text ">
+                <p><span>客服联系</span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (矩形) -->
+            <div id="u27" class="ax_default box_2">
+              <div id="u27_div" class=""></div>
+              <div id="u27_text" class="text ">
+                <p><span>常见问题</span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (矩形) -->
+            <div id="u28" class="ax_default box_2">
+              <div id="u28_div" class=""></div>
+              <div id="u28_text" class="text ">
+                <p><span>管理规章制度</span></p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Unnamed (矩形) -->
+          <div id="u29" class="ax_default _文本">
+            <div id="u29_div" class=""></div>
+            <div id="u29_text" class="text " style="display:none; visibility: hidden">
+              <p></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Unnamed (组合) -->
+        <div id="u30" class="ax_default" data-left="256" data-top="77" data-width="1184" data-height="64">
+
+          <!-- Unnamed (矩形) -->
+          <div id="u31" class="ax_default box_2">
+            <div id="u31_div" class=""></div>
+            <div id="u31_text" class="text " style="display:none; visibility: hidden">
+              <p></p>
+            </div>
+          </div>
+
+          <!-- Unnamed (组合) -->
+          <div id="u32" class="ax_default" data-left="1317" data-top="99" data-width="109" data-height="22">
+
+            <!-- Unnamed (矩形) -->
+            <div id="u33" class="ax_default label">
+              <div id="u33_div" class=""></div>
+              <div id="u33_text" class="text ">
+                <p><span>操作人：xxx</span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (形状) -->
+            <div id="u34" class="ax_default icon">
+              <img id="u34_img" class="img " src="images/步骤10/u34.svg"/>
+              <div id="u34_text" class="text " style="display:none; visibility: hidden">
+                <p></p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Unnamed (图像) -->
+          <div id="u35" class="ax_default image">
+            <img id="u35_img" class="img " src="images/步骤10/u35.png"/>
+            <div id="u35_text" class="text " style="display:none; visibility: hidden">
+              <p></p>
+            </div>
+          </div>
+
+          <!-- Unnamed (图像) -->
+          <div id="u36" class="ax_default image">
+            <img id="u36_img" class="img " src="images/步骤10/u36.png"/>
+            <div id="u36_text" class="text " style="display:none; visibility: hidden">
+              <p></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u37" class="ax_default _默认样式">
+          <div id="u37_div" class=""></div>
+          <div id="u37_text" class="text ">
+            <p><span>您所在的位置：用户服务评价中心-&gt;反馈情况-&gt;我要反馈</span></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u38" class="ax_default box_2">
+        <div id="u38_div" class=""></div>
+        <div id="u38_text" class="text ">
+          <p><span>常用表格下载</span></p>
+        </div>
+      </div>
+
+      <!-- 顶部导航 (动态面板) -->
+      <div id="u39" class="ax_default" data-label="顶部导航">
+        <div id="u39_state0" class="panel_state" data-label="State1" style="">
+          <div id="u39_state0_content" class="panel_state_content">
+
+            <!-- 阴影 (动态面板) -->
+            <div id="u40" class="ax_default" data-label="阴影">
+              <div id="u40_state0" class="panel_state" data-label="State1" style="">
+                <div id="u40_state0_content" class="panel_state_content">
+                </div>
+              </div>
+            </div>
+
+            <!-- 背景 (动态面板) -->
+            <div id="u41" class="ax_default" data-label="背景">
+              <div id="u41_state0" class="panel_state" data-label="State1" style="">
+                <div id="u41_state0_content" class="panel_state_content">
+                </div>
+              </div>
+            </div>
+
+            <!-- Unnamed (图像) -->
+            <div id="u42" class="ax_default image1">
+              <img id="u42_img" class="img " src="images/步骤10/u42.png"/>
+              <div id="u42_text" class="text " style="display:none; visibility: hidden">
+                <p></p>
+              </div>
+            </div>
+
+            <!-- 菜单 (动态面板) -->
+            <div id="u43" class="ax_default" data-label="菜单">
+              <div id="u43_state0" class="panel_state" data-label="State1" style="">
+                <div id="u43_state0_content" class="panel_state_content">
+
+                  <!-- Unnamed (矩形) -->
+                  <div id="u44" class="ax_default _默认样式">
+                    <div id="u44_div" class=""></div>
+                    <div id="u44_text" class="text ">
+                      <p><span>会议管理</span></p>
+                    </div>
+                  </div>
+
+                  <!-- Unnamed (矩形) -->
+                  <div id="u45" class="ax_default _默认样式">
+                    <div id="u45_div" class=""></div>
+                    <div id="u45_text" class="text ">
+                      <p><span>合同管理</span></p>
+                    </div>
+                  </div>
+
+                  <!-- Unnamed (矩形) -->
+                  <div id="u46" class="ax_default _默认样式">
+                    <div id="u46_div" class=""></div>
+                    <div id="u46_text" class="text ">
+                      <p><span>服务管理</span></p>
+                    </div>
+                  </div>
+
+                  <!-- Unnamed (矩形) -->
+                  <div id="u47" class="ax_default _默认样式">
+                    <div id="u47_div" class=""></div>
+                    <div id="u47_text" class="text ">
+                      <p><span>价值度管理</span></p>
+                    </div>
+                  </div>
+
+                  <!-- Unnamed (矩形) -->
+                  <div id="u48" class="ax_default _默认样式">
+                    <div id="u48_div" class=""></div>
+                    <div id="u48_text" class="text ">
+                      <p><span>证据链管理</span></p>
+                    </div>
+                  </div>
+
+                  <!-- Unnamed (矩形) -->
+                  <div id="u49" class="ax_default _默认样式">
+                    <div id="u49_div" class=""></div>
+                    <div id="u49_text" class="text ">
+                      <p><span>简体中文</span></p>
+                    </div>
+                  </div>
+
+                  <!-- Unnamed (矩形) -->
+                  <div id="u50" class="ax_default _默认样式">
+                    <div id="u50_div" class=""></div>
+                    <div id="u50_text" class="text ">
+                      <p><span>网站首页</span></p>
+                    </div>
+                  </div>
+
+                  <!-- Unnamed (矩形) -->
+                  <div id="u51" class="ax_default _默认样式">
+                    <div id="u51_div" class=""></div>
+                    <div id="u51_text" class="text ">
+                      <p><span>账号管理</span></p>
+                    </div>
+                  </div>
+
+                  <!-- Unnamed (矩形) -->
+                  <div id="u52" class="ax_default _默认样式">
+                    <div id="u52_div" class=""></div>
+                    <div id="u52_text" class="text ">
+                      <p><span>最新消息</span></p>
+                    </div>
+                  </div>
+
+                  <!-- Unnamed (矩形) -->
+                  <div id="u53" class="ax_default _默认样式">
+                    <div id="u53_div" class=""></div>
+                    <div id="u53_text" class="text ">
+                      <p><span>联系我们</span></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Unnamed (矩形) -->
+            <div id="u54" class="ax_default _默认样式">
+              <div id="u54_div" class=""></div>
+              <div id="u54_text" class="text ">
+                <p><span>峨舟商务平台</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u55" class="ax_default box_1">
+        <div id="u55_div" class=""></div>
+        <div id="u55_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u56" class="ax_default box_1">
+        <div id="u56_div" class=""></div>
+        <div id="u56_text" class="text ">
+          <p><span>xxx股份有限公司</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (形状) -->
+      <div id="u57" class="ax_default box_1">
+        <img id="u57_img" class="img " src="images/步骤10/u57.svg"/>
+        <div id="u57_text" class="text ">
+          <p><span>服务管理</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (图像) -->
+      <div id="u58" class="ax_default _图像">
+        <img id="u58_img" class="img " src="images/步骤10/u58.png"/>
+        <div id="u58_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (组合) -->
+      <div id="u59" class="ax_default" data-left="256" data-top="177" data-width="1136" data-height="842">
+
+        <!-- Unnamed (矩形) -->
+        <div id="u60" class="ax_default shape">
+          <div id="u60_div" class=""></div>
+          <div id="u60_text" class="text " style="display:none; visibility: hidden">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (动态面板) -->
+        <div id="u61" class="ax_default">
+          <div id="u61_state0" class="panel_state" data-label="State1" style="">
+            <div id="u61_state0_content" class="panel_state_content">
+            </div>
+          </div>
+        </div>
+
+        <!-- Unnamed (动态面板) -->
+        <div id="u62" class="ax_default">
+          <div id="u62_state0" class="panel_state" data-label="State1" style="">
+            <div id="u62_state0_content" class="panel_state_content">
+            </div>
+          </div>
+        </div>
+
+        <!-- Unnamed (动态面板) -->
+        <div id="u63" class="ax_default">
+          <div id="u63_state0" class="panel_state" data-label="State1" style="">
+            <div id="u63_state0_content" class="panel_state_content">
+            </div>
+          </div>
+        </div>
+
+        <!-- Unnamed (动态面板) -->
+        <div id="u64" class="ax_default">
+          <div id="u64_state0" class="panel_state" data-label="State1" style="">
+            <div id="u64_state0_content" class="panel_state_content">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Unnamed (组合) -->
+      <div id="u65" class="ax_default" data-left="0" data-top="0" data-width="0" data-height="0">
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u66" class="ax_default _默认样式">
+        <div id="u66_div" class=""></div>
+        <div id="u66_text" class="text ">
+          <p><span>请完善以下信息,方便我们更好的服务</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u67" class="ax_default _默认样式">
+        <div id="u67_div" class=""></div>
+        <div id="u67_text" class="text ">
+          <p><span>1. 您选择的需要反馈的合同是：</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u68" class="ax_default _默认样式">
+        <div id="u68_div" class=""></div>
+        <div id="u68_text" class="text ">
+          <p><span>（点击可选择历史订单）</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (组合) -->
+      <div id="u69" class="ax_default" data-left="316" data-top="514" data-width="656" data-height="168">
+
+        <!-- Unnamed (矩形) -->
+        <div id="u70" class="ax_default _默认样式">
+          <div style="position:relative"  onclick="document.getElementById('fknr').innerText=''">
+            <textarea id="fknr" class="textareastyle" cols="48" rows="5" style="width:656px;height:168px;"></textarea>
+          </div>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u71" class="ax_default _默认样式">
+        <div id="u71_div" class=""></div>
+        <div id="u71_text" class="text ">
+          <p><span>请留意客服与您的留言以及交流申请，谢谢您的反馈！</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u72" class="ax_default _默认样式">
+        <div style="position:relative"  onclick="document.getElementById('hth').innerText=''">
+          <textarea id="hth" class="textareastyle" cols="48" rows="5">合同号/合同名称</textarea>
+        </div>
+      </div>
+
+      <!-- Unnamed (形状) -->
+      <div id="u73" class="ax_default icon">
+        <img id="u73_img" class="img " src="images/步骤10/u73.svg"/>
+        <div id="u73_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u74" class="ax_default _默认样式">
+        <div id="u74_div" class=""></div>
+        <div id="u74_text" class="text ">
+          <p><span>2. 请对本次服务评分：</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u75" class="ax_default _默认样式">
+        <div style="position:relative"  onclick="document.getElementById('score').innerText=''">
+          <textarea id="score" class="textareastyle" cols="48" rows="5">（0-10分）</textarea>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u76" class="ax_default _默认样式">
+        <div id="u76_div" class=""></div>
+        <div id="u76_text" class="text ">
+          <p><span>3. 您觉得哪部分不足：</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (复选框) -->
+      <div id="u77" class="ax_default checkbox">
+        <label id="u77_input_label" for="u77_input" style="position: absolute; left: 0px;">
+          <img id="u77_img" class="img " src="images/步骤10/u77.svg"/>
+          <div id="u77_text" class="text ">
+            <p><span>A. 选购层面</span></p>
+          </div>
+        </label>
+        <input id="u77_input" type="checkbox" value="checkbox"/>
+      </div>
+
+      <!-- Unnamed (复选框) -->
+      <div id="u78" class="ax_default checkbox">
+        <label id="u78_input_label" for="u78_input" style="position: absolute; left: 0px;">
+          <img id="u78_img" class="img " src="images/步骤10/u78.svg"/>
+          <div id="u78_text" class="text ">
+            <p><span>B. 谈判流程</span></p>
+          </div>
+        </label>
+        <input id="u78_input" type="checkbox" value="checkbox"/>
+      </div>
+
+      <!-- Unnamed (复选框) -->
+      <div id="u79" class="ax_default checkbox">
+        <label id="u79_input_label" for="u79_input" style="position: absolute; left: 0px;">
+          <img id="u79_img" class="img " src="images/步骤10/u79.svg"/>
+          <div id="u79_text" class="text ">
+            <p><span>C. 服务阶段</span></p>
+          </div>
+        </label>
+        <input id="u79_input" type="checkbox" value="checkbox"/>
+      </div>
+
+      <!-- Unnamed (复选框) -->
+      <div id="u80" class="ax_default checkbox">
+        <label id="u80_input_label" for="u80_input" style="position: absolute; left: 0px;">
+          <img id="u80_img" class="img " src="images/步骤10/u80.svg"/>
+          <div id="u80_text" class="text ">
+            <p><span>D. 评价反馈</span></p>
+          </div>
+        </label>
+        <input id="u80_input" type="checkbox" value="checkbox"/>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u81" class="ax_default _默认样式">
+        <div id="u81_div" class=""></div>
+        <div id="u81_text" class="text ">
+          <p><span>4. 您需要反馈什么内容</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u82" class="ax_default button" onclick="fileSelect('fileToUpload1');">
+        <div id="u82_div" class=""></div>
+        <div id="u82_text" class="text ">
+          <p><span>上传附件</span></p>
+        </div>
+      </div>
+      <form id="form_file1" enctype="multipart/form-data" style="width:auto;display: none;">
+        <input type="file" name="fileToUpload1" id="fileToUpload1" onchange="changetext('u82_text', 'fileToUpload1');">
+      </form>
+
+      <!-- Unnamed (矩形) -->
+      <a href="../首页/首页.html">
+      <div id="u83" class="ax_default _默认样式">
+        <div id="u83_div" class=""></div>
+        <div id="u83_text" class="text ">
+          <p><span>反馈结束</span></p>
+        </div>
+      </div></a>
+
+    </div>
+    <script src="resources/scripts/axure/ios.js"></script>
+  </body>
+</html>
