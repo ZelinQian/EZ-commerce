@@ -118,6 +118,26 @@
       }
     </script>
 
+    <script type="text/javascript">
+      function calculate(){
+        var origin_str = "超过投标预期价格的";
+        var text = document.getElementById("u82_text");
+
+        if (document.getElementById("price").value==''){
+          var price = 0;
+        }
+        else{
+          var price = parseInt(document.getElementById("price").value);
+        }
+        var estimate = 40000;
+
+        var growth = 100*(price-estimate)/estimate;
+        growth = growth.toString()+"%";
+        origin_str += growth;
+        text.innerText = origin_str;
+      }
+    </script>
+
   </head>
   <body>
     <div id="base" class="">
@@ -742,14 +762,14 @@
       <div id="u82" class="ax_default box_1">
         <div id="u82_div" class=""></div>
         <div id="u82_text" class="text ">
-          <p><span>超过投标预期价格的__%</span></p>
+          <p><span>超过投标预期价格的  %</span></p>
         </div>
       </div>
 
       <!-- Unnamed (形状) -->
       <div id="u83" class="ax_default box_1">
-        <div style="position:relative"  onclick="document.getElementById('jzys').innerText=''">
-          <textarea id="jzys" class="textareastyle" cols="48" rows="5" style="height: 20pt; text-align: center;">单位：元</textarea>
+        <div style="position:relative"  onclick="document.getElementById('price').innerText=''">
+          <textarea id="price" class="textareastyle" cols="48" rows="5" style="height: 20pt;" onchange="calculate();">单位：元</textarea>
         </div>
       </div>
 
@@ -765,12 +785,13 @@
       </div>
 
       <!-- Unnamed (矩形) -->
+      <a href="../首页/首页.html">
       <div id="u85" class="ax_default primary_button">
         <div id="u85_div" class=""></div>
         <div id="u85_text" class="text ">
           <p><span>申请完成</span></p>
         </div>
-      </div>
+      </div></a>
 
       <!-- Unnamed (组合) -->
       <div id="u86" class="ax_default" data-left="421" data-top="448" data-width="652" data-height="256">
